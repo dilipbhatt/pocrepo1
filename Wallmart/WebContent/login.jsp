@@ -19,13 +19,13 @@
                 <div class="form-group">
                   <p align="center">
                     <label><b>User Name</b></label>&nbsp;
-                    <input type="text" class="form-control" id="userid" placeholder="User id">
+                    <input type="text" name="user_name" class="form-control" id="userid" placeholder="User id">
                   </p>
                 </div>
                 <div class="form-group">
                   <p align="center">
                   <label><b>Password</b></label> &nbsp;&nbsp;
-                  <input type="password" class="form-control" id="pwd" placeholder="Password">
+                  <input type="password" name="password" class="form-control" id="pwd" placeholder="Password">
                   </p>
                 </div>
                 <br/>
