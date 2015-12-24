@@ -43,6 +43,8 @@ public class WallmartAuthenticationFilter implements Filter {
 		// place your code here
 		System.out.println("Inside Authentication Filter Class....");
 		
+		Autthentication auth = new Autthentication();
+		
 		 HttpServletRequest req = (HttpServletRequest) request;
 		 HttpServletResponse res = (HttpServletResponse) response;
 		
@@ -54,7 +56,7 @@ public class WallmartAuthenticationFilter implements Filter {
 		 WallmartDTO.setUserID(user_id);
 		 WallmartDTO.setPassword(password);
 		 
-		 boolean falg = Autthentication.userAuthentication(user_id, password);
+		 boolean falg = auth.userAuthentication(user_id, password);
 		 
 		 if(falg){
 			 //here Login Success page redirect
